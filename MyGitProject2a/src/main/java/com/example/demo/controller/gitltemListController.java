@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class gitltemListController {
 
-	@RequestMapping(path = "/mysecond", method = RequestMethod.GET)
+	@RequestMapping(path = "/gititemlist", method = RequestMethod.GET)
 	public String first() {
-		return "mysecond";
+		return "gititemlist";
 	}
 
 }
