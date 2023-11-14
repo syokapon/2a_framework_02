@@ -11,14 +11,14 @@ public class gitLoginController {
 	public String homelogin() {
 		return "gitlogin";
 	}
-	
-	@RequestMapping(path = "/gitpralogin", method = RequestMethod.GET)
+
+	@RequestMapping(path = "/gitpralogin", method = RequestMethod.POST)
 	public String homelogin(String ID, String PW, Model model) {
 		model.addAttribute(ID);
 		model.addAttribute(PW);
-		if("gitlogin".equals(ID)&&"gitpw".equals(PW)) {
+		if ("gitlogin".equals(ID) && "gitpw".equals(PW)) {
 			return "redirect:/gititemlist";
-		}else {
+		} else {
 			return "redirect:/gitlogin";
 		}
 	}
