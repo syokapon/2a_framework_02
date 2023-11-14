@@ -8,7 +8,7 @@ public class MergeHellController {
 
 	static void kadaiA() {
 		for (int i = 1; i < 11; i++) {
-			System.out.println(i + "回目のループです");
+			System.out.println("現在" + i + "回目のループです");
 		}
 
 	}
